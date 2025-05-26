@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wirkaufendeindrecksmacbook.de - MacBook & iPhone Ankauf</title>
+    <meta name="description" content="Verkaufen Sie Ihr MacBook oder iPhone schnell und sicher. Professioneller Ankauf mit fairer Bewertung und sofortiger Auszahlung.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="assets/logo.svg" alt="wirkaufendeindrecksmacbook.de Logo" height="40" class="me-2">
+                <span class="brand-text">wirkaufendeindrecksmacbook.de</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bewertung">Bewertung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prozess">Ablauf</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-primary mb-4">
+                        Verkaufen Sie Ihr <span class="text-accent">MacBook oder iPhone</span> schnell & sicher
+                    </h1>
+                    <p class="lead mb-4">
+                        Ihr vertrauensvoller Partner für MacBook- und iPhone-Ankauf mit fairer Bewertung, 
+                        transparenten Preisen und sofortiger Auszahlung. Erhalten Sie noch heute ein unverbindliches Angebot!
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <div class="feature-badge">
+                            <i class="fas fa-shield-alt me-2"></i>Sicher & Vertrauensvoll
+                        </div>
+                        <div class="feature-badge">
+                            <i class="fas fa-euro-sign me-2"></i>Faire Preise
+                        </div>
+                        <div class="feature-badge">
+                            <i class="fas fa-clock me-2"></i>Schnelle Abwicklung
+                        </div>
+                    </div>
+                    <a href="#bewertung" class="btn btn-primary btn-lg px-4 py-3">
+                        <i class="fas fa-calculator me-2"></i>Gerät jetzt bewerten
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-container">
+                        <div class="macbook-display">
+                            <i class="fab fa-apple fa-5x text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MacBook Bewertung Section -->
+    <section id="bewertung" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold text-primary mb-3">Gerätebewertung</h2>
+                        <p class="lead">Füllen Sie das Formular aus für MacBook oder iPhone Ankauf</p>
+                    </div>
+
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body p-4">
+                            <form id="deviceForm" action="https://formsubmit.co/support@flyattack.com" method="POST" enctype="multipart/form-data">
+                                <!-- FormSubmit Configuration -->
+                                <input type="hidden" name="_subject" value="Neue Geräte Ankauf Anfrage - wirkaufendeindrecksmacbook.de">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_next" value="https://wirkaufendeindrecksmacbook.de/success.html">
+                                <input type="hidden" name="_cc" value="support@flyattack.com">
+                                <input type="hidden" name="_autoresponse" value="Vielen Dank für Ihre Anfrage! Wir melden uns innerhalb von 24 Stunden bei Ihnen.">
+
+                                <!-- Geräteart auswählen -->
+                                <div class="mb-4">
+                                    <label class="form-label fw-semibold">Welches Gerät möchten Sie verkaufen? *</label>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-2">
+                                            <div class="device-type-option">
+                                                <input type="radio" class="btn-check" name="device_type" id="deviceMacbook" value="MacBook" required>
+                                                <label class="btn btn-outline-primary w-100" for="deviceMacbook">
+                                                    <i class="fab fa-apple mb-2 d-block fa-2x"></i>
+                                                    <strong>MacBook</strong>
+                                                    <small class="d-block">Air, Pro, alle Modelle ab 2012</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <div class="device-type-option">
+                                                <input type="radio" class="btn-check" name="device_type" id="deviceIphone" value="iPhone" required>
+                                                <label class="btn btn-outline-primary w-100" for="deviceIphone">
+                                                    <i class="fas fa-mobile-alt mb-2 d-block fa-2x"></i>
+                                                    <strong>iPhone</strong>
+                                                    <small class="d-block">Alle Modelle ab iPhone 6</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- MacBook Sektion -->
+                                <div id="macbookSection" class="device-section d-none">
+                                    <h5 class="mb-3 text-primary">MacBook Details</h5>
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <label for="macbookModel" class="form-label fw-semibold">MacBook Modell *</label>
+                                        <select class="form-select" id="macbookModel" name="macbook_model" required>
+                                            <option value="">Bitte auswählen</option>
+                                            <!-- MacBook Air M3 & M2 Serie -->
+                                            <option value="MacBook Air M3 15 (2024)">MacBook Air M3 15" (2024)</option>
+                                            <option value="MacBook Air M3 13 (2024)">MacBook Air M3 13" (2024)</option>
+                                            <option value="MacBook Air M2 15 (2023)">MacBook Air M2 15" (2023)</option>
+                                            <option value="MacBook Air M2 13 (2022)">MacBook Air M2 13" (2022)</option>
+                                            <!-- MacBook Air M1 & Intel -->
+                                            <option value="MacBook Air M1 (2020)">MacBook Air M1 (2020)</option>
+                                            <option value="MacBook Air Intel (2020)">MacBook Air Intel (2020)</option>
+                                            <option value="MacBook Air (2019)">MacBook Air (2019)</option>
+                                            <option value="MacBook Air (2018)">MacBook Air (2018)</option>
+                                            <option value="MacBook Air (2017)">MacBook Air (2017)</option>
+                                            <option value="MacBook Air (2015)">MacBook Air (2015)</option>
+                                            <option value="MacBook Air (2014)">MacBook Air (2014)</option>
+                                            <option value="MacBook Air (2013)">MacBook Air (2013)</option>
+                                            <option value="MacBook Air (2012)">MacBook Air (2012)</option>
+                                            <!-- MacBook Pro M3 Serie -->
+                                            <option value="MacBook Pro M3 Max 16 (2023)">MacBook Pro M3 Max 16" (2023)</option>
+                                            <option value="MacBook Pro M3 Pro 16 (2023)">MacBook Pro M3 Pro 16" (2023)</option>
+                                            <option value="MacBook Pro M3 14 (2023)">MacBook Pro M3 14" (2023)</option>
+                                            <!-- MacBook Pro M2 Serie -->
+                                            <option value="MacBook Pro M2 Max 16 (2023)">MacBook Pro M2 Max 16" (2023)</option>
+                                            <option value="MacBook Pro M2 Pro 16 (2023)">MacBook Pro M2 Pro 16" (2023)</option>
+                                            <option value="MacBook Pro M2 Max 14 (2023)">MacBook Pro M2 Max 14" (2023)</option>
+                                            <option value="MacBook Pro M2 Pro 14 (2023)">MacBook Pro M2 Pro 14" (2023)</option>
+                                            <option value="MacBook Pro M2 13 (2022)">MacBook Pro M2 13" (2022)</option>
+                                            <!-- MacBook Pro M1 Serie -->
+                                            <option value="MacBook Pro M1 Max 16 (2021)">MacBook Pro M1 Max 16" (2021)</option>
+                                            <option value="MacBook Pro M1 Pro 16 (2021)">MacBook Pro M1 Pro 16" (2021)</option>
+                                            <option value="MacBook Pro M1 Max 14 (2021)">MacBook Pro M1 Max 14" (2021)</option>
+                                            <option value="MacBook Pro M1 Pro 14 (2021)">MacBook Pro M1 Pro 14" (2021)</option>
+                                            <option value="MacBook Pro M1 13 (2020)">MacBook Pro M1 13" (2020)</option>
+                                            <!-- MacBook Pro Intel Serie -->
+                                            <option value="MacBook Pro Intel 16 (2020)">MacBook Pro Intel 16" (2020)</option>
+                                            <option value="MacBook Pro Intel 13 (2020)">MacBook Pro Intel 13" (2020)</option>
+                                            <option value="MacBook Pro 16 (2019)">MacBook Pro 16" (2019)</option>
+                                            <option value="MacBook Pro 15 (2019)">MacBook Pro 15" (2019)</option>
+                                            <option value="MacBook Pro 13 (2019)">MacBook Pro 13" (2019)</option>
+                                            <option value="MacBook Pro 15 (2018)">MacBook Pro 15" (2018)</option>
+                                            <option value="MacBook Pro 13 (2018)">MacBook Pro 13" (2018)</option>
+                                            <option value="MacBook Pro 15 (2017)">MacBook Pro 15" (2017)</option>
+                                            <option value="MacBook Pro 13 (2017)">MacBook Pro 13" (2017)</option>
+                                            <option value="MacBook Pro 15 (2016)">MacBook Pro 15" (2016)</option>
+                                            <option value="MacBook Pro 13 (2016)">MacBook Pro 13" (2016)</option>
+                                            <option value="MacBook Pro 15 (2015)">MacBook Pro 15" (2015)</option>
+                                            <option value="MacBook Pro 13 (2015)">MacBook Pro 13" (2015)</option>
+                                            <option value="MacBook Pro 15 (2014)">MacBook Pro 15" (2014)</option>
+                                            <option value="MacBook Pro 13 (2014)">MacBook Pro 13" (2014)</option>
+                                            <option value="MacBook Pro 15 (2013)">MacBook Pro 15" (2013)</option>
+                                            <option value="MacBook Pro 13 (2013)">MacBook Pro 13" (2013)</option>
+                                            <option value="MacBook Pro 15 (2012)">MacBook Pro 15" (2012)</option>
+                                            <option value="MacBook Pro 13 (2012)">MacBook Pro 13" (2012)</option>
+                                            <!-- MacBook (12-inch) -->
+                                            <option value="MacBook 12 (2017)">MacBook 12" (2017)</option>
+                                            <option value="MacBook 12 (2016)">MacBook 12" (2016)</option>
+                                            <option value="MacBook 12 (2015)">MacBook 12" (2015)</option>
+                                            <!-- Andere/Ältere Modelle -->
+                                            <option value="Älter als 2012">Älter als 2012 (nicht unterstützt)</option>
+                                            <option value="Anderes Modell">Anderes Modell</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="storageSize" class="form-label fw-semibold">Speicherkapazität *</label>
+                                        <select class="form-select" id="storageSize" name="storage_size" required>
+                                            <option value="">Bitte auswählen</option>
+                                            <option value="128GB">128GB</option>
+                                            <option value="256GB">256GB</option>
+                                            <option value="512GB">512GB</option>
+                                            <option value="1TB">1TB</option>
+                                            <option value="2TB">2TB</option>
+                                            <option value="4TB">4TB</option>
+                                            <option value="8TB">8TB</option>
+                                            <option value="Unbekannt">Unbekannt</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <!-- iPhone Sektion -->
+                                <div id="iphoneSection" class="device-section d-none">
+                                    <h5 class="mb-3 text-primary">iPhone Details</h5>
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <label for="iphoneModel" class="form-label fw-semibold">iPhone Modell *</label>
+                                            <select class="form-select" id="iphoneModel" name="iphone_model" required>
+                                                <option value="">Bitte auswählen</option>
+                                                <!-- iPhone 15 Serie -->
+                                                <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+                                                <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+                                                <option value="iPhone 15 Plus">iPhone 15 Plus</option>
+                                                <option value="iPhone 15">iPhone 15</option>
+                                                <!-- iPhone 14 Serie -->
+                                                <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+                                                <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+                                                <option value="iPhone 14 Plus">iPhone 14 Plus</option>
+                                                <option value="iPhone 14">iPhone 14</option>
+                                                <!-- iPhone 13 Serie -->
+                                                <option value="iPhone 13 Pro Max">iPhone 13 Pro Max</option>
+                                                <option value="iPhone 13 Pro">iPhone 13 Pro</option>
+                                                <option value="iPhone 13 mini">iPhone 13 mini</option>
+                                                <option value="iPhone 13">iPhone 13</option>
+                                                <!-- iPhone 12 Serie -->
+                                                <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
+                                                <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+                                                <option value="iPhone 12 mini">iPhone 12 mini</option>
+                                                <option value="iPhone 12">iPhone 12</option>
+                                                <!-- iPhone 11 Serie -->
+                                                <option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+                                                <option value="iPhone 11 Pro">iPhone 11 Pro</option>
+                                                <option value="iPhone 11">iPhone 11</option>
+                                                <!-- iPhone XS/XR Serie -->
+                                                <option value="iPhone XS Max">iPhone XS Max</option>
+                                                <option value="iPhone XS">iPhone XS</option>
+                                                <option value="iPhone XR">iPhone XR</option>
+                                                <!-- iPhone X -->
+                                                <option value="iPhone X">iPhone X</option>
+                                                <!-- iPhone 8 Serie -->
+                                                <option value="iPhone 8 Plus">iPhone 8 Plus</option>
+                                                <option value="iPhone 8">iPhone 8</option>
+                                                <!-- iPhone 7 Serie -->
+                                                <option value="iPhone 7 Plus">iPhone 7 Plus</option>
+                                                <option value="iPhone 7">iPhone 7</option>
+                                                <!-- iPhone 6s Serie -->
+                                                <option value="iPhone 6s Plus">iPhone 6s Plus</option>
+                                                <option value="iPhone 6s">iPhone 6s</option>
+                                                <!-- iPhone 6 Serie -->
+                                                <option value="iPhone 6 Plus">iPhone 6 Plus</option>
+                                                <option value="iPhone 6">iPhone 6</option>
+                                                <!-- iPhone SE -->
+                                                <option value="iPhone SE 3. Gen (2022)">iPhone SE 3. Gen (2022)</option>
+                                                <option value="iPhone SE 2. Gen (2020)">iPhone SE 2. Gen (2020)</option>
+                                                <option value="iPhone SE 1. Gen (2016)">iPhone SE 1. Gen (2016)</option>
+                                                <!-- Andere -->
+                                                <option value="Älter als iPhone 6">Älter als iPhone 6 (nicht unterstützt)</option>
+                                                <option value="Anderes iPhone Modell">Anderes iPhone Modell</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="iphoneStorage" class="form-label fw-semibold">Speicherkapazität *</label>
+                                            <select class="form-select" id="iphoneStorage" name="iphone_storage" required>
+                                                <option value="">Bitte auswählen</option>
+                                                <option value="16GB">16GB</option>
+                                                <option value="32GB">32GB</option>
+                                                <option value="64GB">64GB</option>
+                                                <option value="128GB">128GB</option>
+                                                <option value="256GB">256GB</option>
+                                                <option value="512GB">512GB</option>
+                                                <option value="1TB">1TB</option>
+                                                <option value="Unbekannt">Unbekannt</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <label for="iphoneColor" class="form-label fw-semibold">Farbe</label>
+                                            <select class="form-select" id="iphoneColor" name="iphone_color">
+                                                <option value="">Bitte auswählen</option>
+                                                <option value="Space Grau">Space Grau</option>
+                                                <option value="Silber">Silber</option>
+                                                <option value="Gold">Gold</option>
+                                                <option value="Rosé Gold">Rosé Gold</option>
+                                                <option value="Rot">Rot</option>
+                                                <option value="Blau">Blau</option>
+                                                <option value="Grün">Grün</option>
+                                                <option value="Violett">Violett</option>
+                                                <option value="Gelb">Gelb</option>
+                                                <option value="Schwarz">Schwarz</option>
+                                                <option value="Weiß">Weiß</option>
+                                                <option value="Midnight">Midnight</option>
+                                                <option value="Starlight">Starlight</option>
+                                                <option value="Deep Purple">Deep Purple</option>
+                                                <option value="Natural Titanium">Natural Titanium</option>
+                                                <option value="Blue Titanium">Blue Titanium</option>
+                                                <option value="White Titanium">White Titanium</option>
+                                                <option value="Black Titanium">Black Titanium</option>
+                                                <option value="Andere">Andere</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="iphoneCarrier" class="form-label fw-semibold">Netzbetreiber</label>
+                                            <select class="form-select" id="iphoneCarrier" name="iphone_carrier">
+                                                <option value="">Bitte auswählen</option>
+                                                <option value="Unlocked/Ohne SIM-Lock">Unlocked/Ohne SIM-Lock</option>
+                                                <option value="Telekom">Telekom</option>
+                                                <option value="Vodafone">Vodafone</option>
+                                                <option value="O2">O2</option>
+                                                <option value="1&1">1&1</option>
+                                                <option value="Andere">Andere</option>
+                                                <option value="Unbekannt">Unbekannt</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- RAM und Prozessor (nur für MacBook) -->
+                                <div id="macbookSpecs" class="macbook-only d-none">
+                                    <div class="row mb-4">
+                                        <div class="col-md-6">
+                                            <label for="ramSize" class="form-label fw-semibold">Arbeitsspeicher (RAM)</label>
+                                            <select class="form-select" id="ramSize" name="ram_size">
+                                                <option value="">Bitte auswählen</option>
+                                                <option value="4GB">4GB</option>
+                                                <option value="8GB">8GB</option>
+                                                <option value="16GB">16GB</option>
+                                                <option value="32GB">32GB</option>
+                                                <option value="64GB">64GB</option>
+                                                <option value="128GB">128GB</option>
+                                                <option value="Unbekannt">Unbekannt</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="processor" class="form-label fw-semibold">Prozessor</label>
+                                            <select class="form-select" id="processor" name="processor">
+                                                <option value="">Bitte auswählen</option>
+                                                <option value="Apple M3">Apple M3</option>
+                                                <option value="Apple M2">Apple M2</option>
+                                                <option value="Apple M1">Apple M1</option>
+                                                <option value="Intel Core i5">Intel Core i5</option>
+                                                <option value="Intel Core i7">Intel Core i7</option>
+                                                <option value="Intel Core i9">Intel Core i9</option>
+                                                <option value="Intel Core 2 Duo">Intel Core 2 Duo</option>
+                                                <option value="Unbekannt">Unbekannt</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Zustand -->
+                                <div class="mb-4">
+                                    <label class="form-label fw-semibold">Zustand des Geräts *</label>
+                                    <div class="row">
+                                        <div class="col-md-3 col-6 mb-2">
+                                            <div class="condition-option">
+                                                <input type="radio" class="btn-check" name="condition" id="condition1" value="Wie neu" required>
+                                                <label class="btn btn-outline-success w-100" for="condition1">
+                                                    <i class="fas fa-star mb-2 d-block"></i>
+                                                    <strong>Wie neu</strong>
+                                                    <small class="d-block">Keine Gebrauchsspuren</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6 mb-2">
+                                            <div class="condition-option">
+                                                <input type="radio" class="btn-check" name="condition" id="condition2" value="Sehr gut" required>
+                                                <label class="btn btn-outline-primary w-100" for="condition2">
+                                                    <i class="fas fa-thumbs-up mb-2 d-block"></i>
+                                                    <strong>Sehr gut</strong>
+                                                    <small class="d-block">Minimale Gebrauchsspuren</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6 mb-2">
+                                            <div class="condition-option">
+                                                <input type="radio" class="btn-check" name="condition" id="condition3" value="Gut" required>
+                                                <label class="btn btn-outline-warning w-100" for="condition3">
+                                                    <i class="fas fa-check mb-2 d-block"></i>
+                                                    <strong>Gut</strong>
+                                                    <small class="d-block">Sichtbare Gebrauchsspuren</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6 mb-2">
+                                            <div class="condition-option">
+                                                <input type="radio" class="btn-check" name="condition" id="condition4" value="Akzeptabel" required>
+                                                <label class="btn btn-outline-secondary w-100" for="condition4">
+                                                    <i class="fas fa-wrench mb-2 d-block"></i>
+                                                    <strong>Akzeptabel</strong>
+                                                    <small class="d-block">Deutliche Gebrauchsspuren</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Zusätzliche Informationen -->
+                                <div class="mb-4">
+                                    <label for="additionalInfo" class="form-label fw-semibold">Zusätzliche Informationen</label>
+                                    <textarea class="form-control" id="additionalInfo" name="additional_info" rows="3" 
+                                              placeholder="Beschreiben Sie besondere Eigenschaften, Schäden oder enthaltenes Zubehör..."></textarea>
+                                </div>
+
+                                <!-- Fotos -->
+                                <div class="mb-4">
+                                    <label for="photos" class="form-label fw-semibold">Fotos des Geräts</label>
+                                    <input type="file" class="form-control" id="photos" name="photos" multiple accept="image/*">
+                                    <div class="form-text">Sie können mehrere Fotos hochladen (optional, aber empfohlen für eine genauere Bewertung)</div>
+                                </div>
+
+                                <!-- Kontaktdaten -->
+                                <h5 class="mb-3 text-primary">Ihre Kontaktdaten</h5>
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label fw-semibold">Vorname *</label>
+                                        <input type="text" class="form-control" id="firstName" name="first_name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label fw-semibold">Nachname *</label>
+                                        <input type="text" class="form-control" id="lastName" name="last_name" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label fw-semibold">E-Mail Adresse *</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label fw-semibold">Telefonnummer</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone">
+                                    </div>
+                                </div>
+
+                                <!-- Datenschutz -->
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacy" name="privacy_accepted" required>
+                                        <label class="form-check-label" for="privacy">
+                                            Ich stimme der <a href="datenschutz.html" class="text-primary">Datenschutzerklärung</a> zu und 
+                                            bin damit einverstanden, dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. *
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>Unverbindliche Anfrage senden
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prozess Section -->
+    <section id="prozess" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary mb-3">So funktioniert der Ankauf</h2>
+                <p class="lead">Einfach, transparent und sicher in nur 3 Schritten</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="process-step text-center">
+                        <div class="step-icon mb-3">
+                            <i class="fas fa-laptop fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">1. MacBook bewerten</h4>
+                        <p>Füllen Sie unser Formular aus und erhalten Sie sofort eine erste Preisschätzung für Ihr MacBook.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="process-step text-center">
+                        <div class="step-icon mb-3">
+                            <i class="fas fa-shipping-fast fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">2. Versand & Prüfung</h4>
+                        <p>Senden Sie Ihr MacBook kostenfrei an uns. Wir prüfen das Gerät und erstellen ein finales Angebot.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="process-step text-center">
+                        <div class="step-icon mb-3">
+                            <i class="fas fa-euro-sign fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">3. Auszahlung</h4>
+                        <p>Bei Annahme des Angebots erhalten Sie das Geld innerhalb von 24 Stunden auf Ihr Konto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold text-primary mb-4">Kontakt & Impressum</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="contact-info">
+                                <h5><i class="fas fa-building me-2"></i>Unternehmen</h5>
+                                <p>
+                                    wirkaufendeindrecksmacbook.de<br>
+                                    Spezialist für MacBook & iPhone Ankauf<br>
+                                    Deutschland
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="contact-info">
+                                <h5><i class="fas fa-envelope me-2"></i>Kontakt</h5>
+                                <p>
+                                    E-Mail: support@flyattack.com<br>
+                                    Website: wirkaufendeindrecksmacbook.de<br>
+                                    Mo-Fr: 9:00 - 18:00 Uhr
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="mb-0">&copy; 2025 wirkaufendeindrecksmacbook.de. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="datenschutz.html" class="text-light me-3">Datenschutz</a>
+                    <a href="agb.html" class="text-light me-2">AGB</a>
+                    <a href="impressum.html" class="text-light me-2">Impressum</a>
+                    <a href="widerruf.html" class="text-light">Widerruf</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
